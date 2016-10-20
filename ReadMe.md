@@ -13,7 +13,7 @@ The key to getting this to work is to provide an alternative mechanism to provid
 
 `BotOptions` are POCO *option* classes which are populated using the new Options capabilities which are a part of the ASP.NET core configuration system.
 
-```
+```C#
 public class BotOptions
 {
     public BotAuthenticationOptions Authentication { get; set; }
@@ -29,7 +29,7 @@ public class BotAuthenticationOptions
 
 ## CoreBotAuthententicationAttribute
 
-```
+```C#
 [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, AllowMultiple = false)]
 public class CoreBotAuthententicationAttribute : Attribute, IAsyncActionFilter
 {
@@ -126,7 +126,7 @@ public class CoreBotAuthententicationAttribute : Attribute, IAsyncActionFilter
 
 The `CoreDialogModule` class encapsulates a set of Autofac registrations needed to provide the Bot Builder and Bot Connector with the credentials it needs.
 
-```
+```C#
 public class CoreDialogModule : Module
  {
      protected override void Load(ContainerBuilder builder)
@@ -164,7 +164,7 @@ public class CoreDialogModule : Module
 
 Below are the changes to `Startup` to get this all working.
 
-```
+```C#
 public class Startup
 {
     public Startup(IHostingEnvironment env)
