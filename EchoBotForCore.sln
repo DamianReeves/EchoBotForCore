@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BEED29DF-151C-4990-800F-C6F5FFD30147}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9062394E-38D3-45DD-80AF-F1C63D47D17C}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "EchoBotForCore", "src\EchoBotForCore\EchoBotForCore.xproj", "{205AC689-C9EB-43BF-8630-2E9C4D88112E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{205AC689-C9EB-43BF-8630-2E9C4D88112E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{205AC689-C9EB-43BF-8630-2E9C4D88112E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{205AC689-C9EB-43BF-8630-2E9C4D88112E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{205AC689-C9EB-43BF-8630-2E9C4D88112E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{205AC689-C9EB-43BF-8630-2E9C4D88112E} = {BEED29DF-151C-4990-800F-C6F5FFD30147}
+	EndGlobalSection
+EndGlobal
